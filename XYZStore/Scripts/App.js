@@ -46,18 +46,31 @@
     });
 
     function populateInterface() {
-        var message = jQuery("#message");
-        message.text("Hello Houssem Romdhani");
+        var prodRepo = new XYZ.Repositories.ProductRepository(appUrl);
+        var call = prodRepo.getProductsByCategory("Beverages");
+        call.done(function (data, textStatus, jqXHR) {
+            var message = jQuery("#message");
+            message.text("Products:");
+            jQuery.each(data.d.results, function (index, value) {
+                message.append("<br/>");
+                message.append(value.Title);
+            });
+        });
+        call.fail(failHandler);
     }
 
 
-    function failHandler(jqXHR, textStatus, errorThrown) {
+    function failHandler(errObj) {
         var response = "";
-        try {
-            var parsed = JSON.parse(jqXHR.responseText);
-            response = parsed.error.message.value;
-        } catch (e) {
-            response = jqXHR.responseText;
+        if (errObj.get_message) {
+            response = errObj.get_message();
+        } else {
+            try {
+                var parsed = JSON.parse(errObj.responseText);
+                response = parsed.error.message.value;
+            } catch (e) {
+                response = errObj.responseText;
+            }
         }
         alert("Call failed. Error: " + response);
     }

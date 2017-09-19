@@ -114,8 +114,7 @@ XYZ.Provisioner = function (appUrl, hostUrl) {
         function success() {
             dfd.notify(String.format("\t{0} of {1}", currentProduct, products.length));
             if (currentProduct == products.length) {
-                // updateCurrentVersion();
-                dfd.resolve();
+                updateCurrentVersion();
             } else {
                 updateNextSet();
             }
@@ -125,6 +124,21 @@ XYZ.Provisioner = function (appUrl, hostUrl) {
             dfd.reject(args);
         }
 
+    }
+
+    function updateCurrentVersion() {
+        if (!dfd) return;
+        dfd.notify("Updating current version number");
+
+        var repo = new XYZ.Repositories.WebRepository();
+        var call = repo.setProperty("CurrentVersion", "1.0.0.0", appUrl);
+        call.done(function (data, textStatus, jqXHR) {
+            dfd.notify("Update complete");
+            dfd.resolve();
+        });
+        call.fail(function (jqXHR, textStatus, errorThrown) {
+            dfd.reject(jqXHR);
+        });
     }
 
 
