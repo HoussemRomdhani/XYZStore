@@ -60,24 +60,17 @@
     <Content Include="Pages\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Products\ProductsInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{2f193c86-d753-41b8-bbee-827d9501ad58}</SharePointProjectItemId>
-    </None>
-    <None Include="Products\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{0a32caa3-b170-42d9-a785-a6bb26fc588c}</SharePointProjectItemId>
-    </None>
     <None Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{02028bea-85b6-445a-9083-56ff15d815a0}</SharePointProjectItemId>
     </None>
-    <Content Include="Products\Elements.xml" />
-    <Content Include="Products\ProductsInstance\Elements.xml" />
-    <Content Include="Products\Schema.xml" />
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\provisioner.js" />
+    <Content Include="Scripts\repositories.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>

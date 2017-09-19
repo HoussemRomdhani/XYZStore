@@ -1,31 +1,64 @@
-﻿'use strict';
+﻿(function () {
+    var appUrl = GetUrlKeyValue("SPAppWebUrl");
+    var webRepo = new XYZ.Repositories.WebRepository();
 
-ExecuteOrDelayUntilScriptLoaded(initializePage, "sp.js");
+    jQuery(function () {
+        var message = jQuery("#message");
 
-function initializePage()
-{
-    var context = SP.ClientContext.get_current();
-    var user = context.get_web().get_currentUser();
+        var call = webRepo.getProperties(appUrl)
+        call.done(function (data, textStatus, jqXHR) {
+            var currentVersion = data.d['CurrentVersion'];
 
-    // This code runs when the DOM is ready and creates a context object which is needed to use the SharePoint object model
-    $(document).ready(function () {
-        getUserName();
+            if (SP.ScriptUtility.isNullOrEmptyString(currentVersion) == false) {
+                populateInterface();
+            } else {
+                var call = webRepo.getPermissions(appUrl);
+                call.done(function (data, textStatus, jqXHR) {
+                    var perms = new SP.BasePermissions();
+                    perms.initPropertiesFromJson(data.d.EffectiveBasePermissions);
+                    var manageWeb = perms.has(SP.PermissionKind.manageWeb);
+                    var manageLists = perms.has(SP.PermissionKind.manageLists);
+
+                    if ((manageWeb && manageLists) === false) {
+                        message.text("A site owner needs to visit this site to process an update");
+                    } else {
+                        message.text("Provisioning content to App Web");
+
+                        var prov = new XYZ.Provisioner(appUrl);
+                        var call = prov.execute();
+                        call.progress(function (msg) {
+                            message.append("<br/>");
+                            message.append(msg);
+                        });
+                        call.done(function () {
+                            setTimeout(function () {
+                                populateInterface();
+                            }, 4000);
+                        });
+                        call.fail(failHandler);
+                    }
+
+                });
+                call.fail(failHandler);
+            }
+        });
+        call.fail(failHandler);
     });
 
-    // This function prepares, loads, and then executes a SharePoint query to get the current users information
-    function getUserName() {
-        context.load(user);
-        context.executeQueryAsync(onGetUserNameSuccess, onGetUserNameFail);
+    function populateInterface() {
+        var message = jQuery("#message");
+        message.text("Hello Houssem Romdhani");
     }
 
-    // This function is executed if the above call is successful
-    // It replaces the contents of the 'message' element with the user name
-    function onGetUserNameSuccess() {
-        $('#message').text('Hello ' + user.get_title());
-    }
 
-    // This function is executed if the above call fails
-    function onGetUserNameFail(sender, args) {
-        alert('Failed to get user name. Error:' + args.get_message());
+    function failHandler(jqXHR, textStatus, errorThrown) {
+        var response = "";
+        try {
+            var parsed = JSON.parse(jqXHR.responseText);
+            response = parsed.error.message.value;
+        } catch (e) {
+            response = jqXHR.responseText;
+        }
+        alert("Call failed. Error: " + response);
     }
-}
+})();

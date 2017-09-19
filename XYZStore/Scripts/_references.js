@@ -1,4 +1,6 @@
 ﻿/// <reference path="jquery-1.9.1.js" />
+/// <reference path="repositories.js" />
+/// <reference path="provisioner.js" />
 /// <reference path="~/_layouts/15/MicrosoftAjax.js" />
 /// <reference path="~/_layouts/15/init.js" />
 /// <reference path="~/_layouts/15/SP.Core.js" />
