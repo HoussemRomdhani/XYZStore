@@ -1,0 +1,3 @@
+C:\Users\houssem.r\Desktop\office365\XYZStore\XYZStore\bin\Debug\XYZStore.pdb
+C:\Users\houssem.r\Desktop\office365\XYZStore\XYZStore\obj\Debug\XYZStore.dll
+C:\Users\houssem.r\Desktop\office365\XYZStore\XYZStore\obj\Debug\XYZStore.pdb
