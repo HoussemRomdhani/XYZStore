@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="XYZStore Feature1" Description="SharePoint App Feature" Id="e3b19151-52f8-47ff-998d-602092f573fe" Scope="Web" Version="1.0.0.0">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="e3b19151-52f8-47ff-998d-602092f573fe" Scope="Web" Title="XYZStore Feature1" Version="1.0.0.0">
   <ElementManifests>
     <ElementManifest Location="Pages\Elements.xml" />
     <ElementFile Location="Pages\Default.aspx" />
