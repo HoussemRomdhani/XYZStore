@@ -1,0 +1,792 @@
+﻿[
+    {
+        "Title": "Chai",
+        "QuantityPerUnit": "10 boxes x 20 bags",
+        "UnitPrice": 18,
+        "UnitsInStock": 39,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 10,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Chang",
+        "QuantityPerUnit": "24 - 12 oz bottles",
+        "UnitPrice": 19,
+        "UnitsInStock": 17,
+        "UnitsOnOrder": 40,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Aniseed Syrup",
+        "QuantityPerUnit": "12 - 550 ml bottles",
+        "UnitPrice": 10,
+        "UnitsInStock": 13,
+        "UnitsOnOrder": 70,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Chef Anton's Cajun Seasoning",
+        "QuantityPerUnit": "48 - 6 oz jars",
+        "UnitPrice": 22,
+        "UnitsInStock": 53,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Chef Anton's Gumbo Mix",
+        "QuantityPerUnit": "36 boxes",
+        "UnitPrice": 21.35,
+        "UnitsInStock": 0,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Grandma's Boysenberry Spread",
+        "QuantityPerUnit": "12 - 8 oz jars",
+        "UnitPrice": 25,
+        "UnitsInStock": 120,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Uncle Bob's Organic Dried Pears",
+        "QuantityPerUnit": "12 - 1 lb pkgs.",
+        "UnitPrice": 30,
+        "UnitsInStock": 15,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 10,
+        "Discontinued": false,
+        "CategoryId": 7
+    },
+    {
+        "Title": "Northwoods Cranberry Sauce",
+        "QuantityPerUnit": "12 - 12 oz jars",
+        "UnitPrice": 40,
+        "UnitsInStock": 6,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Mishi Kobe Niku",
+        "QuantityPerUnit": "18 - 500 g pkgs.",
+        "UnitPrice": 97,
+        "UnitsInStock": 29,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 6
+    },
+    {
+        "Title": "Ikura",
+        "QuantityPerUnit": "12 - 200 ml jars",
+        "UnitPrice": 31,
+        "UnitsInStock": 25,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Queso Cabrales",
+        "QuantityPerUnit": "1 kg pkg.",
+        "UnitPrice": 21,
+        "UnitsInStock": 22,
+        "UnitsOnOrder": 30,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Queso Manchego La Pastora",
+        "QuantityPerUnit": "10 - 500 g pkgs.",
+        "UnitPrice": 38,
+        "UnitsInStock": 86,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Konbu",
+        "QuantityPerUnit": "2 kg box",
+        "UnitPrice": 6,
+        "UnitsInStock": 24,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Tofu",
+        "QuantityPerUnit": "40 - 100 g pkgs.",
+        "UnitPrice": 23.25,
+        "UnitsInStock": 35,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 7
+    },
+    {
+        "Title": "Genen Shouyu",
+        "QuantityPerUnit": "24 - 250 ml bottles",
+        "UnitPrice": 15.5,
+        "UnitsInStock": 39,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Pavlova",
+        "QuantityPerUnit": "32 - 500 g boxes",
+        "UnitPrice": 17.45,
+        "UnitsInStock": 29,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 10,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Alice Mutton",
+        "QuantityPerUnit": "20 - 1 kg tins",
+        "UnitPrice": 39,
+        "UnitsInStock": 0,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 6
+    },
+    {
+        "Title": "Carnarvon Tigers",
+        "QuantityPerUnit": "16 kg pkg.",
+        "UnitPrice": 62.5,
+        "UnitsInStock": 42,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Teatime Chocolate Biscuits",
+        "QuantityPerUnit": "10 boxes x 12 pieces",
+        "UnitPrice": 9.2,
+        "UnitsInStock": 25,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Sir Rodney's Marmalade",
+        "QuantityPerUnit": "30 gift boxes",
+        "UnitPrice": 81,
+        "UnitsInStock": 40,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Sir Rodney's Scones",
+        "QuantityPerUnit": "24 pkgs. x 4 pieces",
+        "UnitPrice": 10,
+        "UnitsInStock": 3,
+        "UnitsOnOrder": 40,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Gustaf's Knäckebröd",
+        "QuantityPerUnit": "24 - 500 g pkgs.",
+        "UnitPrice": 21,
+        "UnitsInStock": 104,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 5
+    },
+    {
+        "Title": "Tunnbröd",
+        "QuantityPerUnit": "12 - 250 g pkgs.",
+        "UnitPrice": 9,
+        "UnitsInStock": 61,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 5
+    },
+    {
+        "Title": "Guaraná Fantástica",
+        "QuantityPerUnit": "12 - 355 ml cans",
+        "UnitPrice": 4.5,
+        "UnitsInStock": 20,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 1
+    },
+    {
+        "Title": "NuNuCa Nuß-Nougat-Creme",
+        "QuantityPerUnit": "20 - 450 g glasses",
+        "UnitPrice": 14,
+        "UnitsInStock": 76,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Gumbär Gummibärchen",
+        "QuantityPerUnit": "100 - 250 g bags",
+        "UnitPrice": 31.23,
+        "UnitsInStock": 15,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Schoggi Schokolade",
+        "QuantityPerUnit": "100 - 100 g pieces",
+        "UnitPrice": 43.9,
+        "UnitsInStock": 49,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Rössle Sauerkraut",
+        "QuantityPerUnit": "25 - 825 g cans",
+        "UnitPrice": 45.6,
+        "UnitsInStock": 26,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 7
+    },
+    {
+        "Title": "Thüringer Rostbratwurst",
+        "QuantityPerUnit": "50 bags x 30 sausgs.",
+        "UnitPrice": 123.79,
+        "UnitsInStock": 0,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 6
+    },
+    {
+        "Title": "Nord-Ost Matjeshering",
+        "QuantityPerUnit": "10 - 200 g glasses",
+        "UnitPrice": 25.89,
+        "UnitsInStock": 10,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Gorgonzola Telino",
+        "QuantityPerUnit": "12 - 100 g pkgs",
+        "UnitPrice": 12.5,
+        "UnitsInStock": 0,
+        "UnitsOnOrder": 70,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Mascarpone Fabioli",
+        "QuantityPerUnit": "24 - 200 g pkgs.",
+        "UnitPrice": 32,
+        "UnitsInStock": 9,
+        "UnitsOnOrder": 40,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Geitost",
+        "QuantityPerUnit": "500 g",
+        "UnitPrice": 2.5,
+        "UnitsInStock": 112,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Sasquatch Ale",
+        "QuantityPerUnit": "24 - 12 oz bottles",
+        "UnitPrice": 14,
+        "UnitsInStock": 111,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Steeleye Stout",
+        "QuantityPerUnit": "24 - 12 oz bottles",
+        "UnitPrice": 18,
+        "UnitsInStock": 20,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Inlagd Sill",
+        "QuantityPerUnit": "24 - 250 g  jars",
+        "UnitPrice": 19,
+        "UnitsInStock": 112,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Gravad lax",
+        "QuantityPerUnit": "12 - 500 g pkgs.",
+        "UnitPrice": 26,
+        "UnitsInStock": 11,
+        "UnitsOnOrder": 50,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Côte de Blaye",
+        "QuantityPerUnit": "12 - 75 cl bottles",
+        "UnitPrice": 263.5,
+        "UnitsInStock": 17,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Chartreuse verte",
+        "QuantityPerUnit": "750 cc per bottle",
+        "UnitPrice": 18,
+        "UnitsInStock": 69,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Boston Crab Meat",
+        "QuantityPerUnit": "24 - 4 oz tins",
+        "UnitPrice": 18.4,
+        "UnitsInStock": 123,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Jack's New England Clam Chowder",
+        "QuantityPerUnit": "12 - 12 oz cans",
+        "UnitPrice": 9.65,
+        "UnitsInStock": 85,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 10,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Singaporean Hokkien Fried Mee",
+        "QuantityPerUnit": "32 - 1 kg pkgs.",
+        "UnitPrice": 14,
+        "UnitsInStock": 26,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 5
+    },
+    {
+        "Title": "Ipoh Coffee",
+        "QuantityPerUnit": "16 - 500 g tins",
+        "UnitPrice": 46,
+        "UnitsInStock": 17,
+        "UnitsOnOrder": 10,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Gula Malacca",
+        "QuantityPerUnit": "20 - 2 kg bags",
+        "UnitPrice": 19.45,
+        "UnitsInStock": 27,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Rogede sild",
+        "QuantityPerUnit": "1k pkg.",
+        "UnitPrice": 9.5,
+        "UnitsInStock": 5,
+        "UnitsOnOrder": 70,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Spegesild",
+        "QuantityPerUnit": "4 - 450 g glasses",
+        "UnitPrice": 12,
+        "UnitsInStock": 95,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Zaanse koeken",
+        "QuantityPerUnit": "10 - 4 oz boxes",
+        "UnitPrice": 9.5,
+        "UnitsInStock": 36,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Chocolade",
+        "QuantityPerUnit": "10 pkgs.",
+        "UnitPrice": 12.75,
+        "UnitsInStock": 15,
+        "UnitsOnOrder": 70,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Maxilaku",
+        "QuantityPerUnit": "24 - 50 g pkgs.",
+        "UnitPrice": 20,
+        "UnitsInStock": 10,
+        "UnitsOnOrder": 60,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Valkoinen suklaa",
+        "QuantityPerUnit": "12 - 100 g bars",
+        "UnitPrice": 16.25,
+        "UnitsInStock": 65,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Manjimup Dried Apples",
+        "QuantityPerUnit": "50 - 300 g pkgs.",
+        "UnitPrice": 53,
+        "UnitsInStock": 20,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 10,
+        "Discontinued": false,
+        "CategoryId": 7
+    },
+    {
+        "Title": "Filo Mix",
+        "QuantityPerUnit": "16 - 2 kg boxes",
+        "UnitPrice": 7,
+        "UnitsInStock": 38,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 5
+    },
+    {
+        "Title": "Perth Pasties",
+        "QuantityPerUnit": "48 pieces",
+        "UnitPrice": 32.8,
+        "UnitsInStock": 0,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": true,
+        "CategoryId": 6
+    },
+    {
+        "Title": "Tourtière",
+        "QuantityPerUnit": "16 pies",
+        "UnitPrice": 7.45,
+        "UnitsInStock": 21,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 10,
+        "Discontinued": false,
+        "CategoryId": 6
+    },
+    {
+        "Title": "Pâté chinois",
+        "QuantityPerUnit": "24 boxes x 2 pies",
+        "UnitPrice": 24,
+        "UnitsInStock": 115,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 6
+    },
+    {
+        "Title": "Gnocchi di nonna Alice",
+        "QuantityPerUnit": "24 - 250 g pkgs.",
+        "UnitPrice": 38,
+        "UnitsInStock": 21,
+        "UnitsOnOrder": 10,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 5
+    },
+    {
+        "Title": "Ravioli Angelo",
+        "QuantityPerUnit": "24 - 250 g pkgs.",
+        "UnitPrice": 19.5,
+        "UnitsInStock": 36,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 5
+    },
+    {
+        "Title": "Escargots de Bourgogne",
+        "QuantityPerUnit": "24 pieces",
+        "UnitPrice": 13.25,
+        "UnitsInStock": 62,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Raclette Courdavault",
+        "QuantityPerUnit": "5 kg pkg.",
+        "UnitPrice": 55,
+        "UnitsInStock": 79,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Camembert Pierrot",
+        "QuantityPerUnit": "15 - 300 g rounds",
+        "UnitPrice": 34,
+        "UnitsInStock": 19,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Sirop d'érable",
+        "QuantityPerUnit": "24 - 500 ml bottles",
+        "UnitPrice": 28.5,
+        "UnitsInStock": 113,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Tarte au sucre",
+        "QuantityPerUnit": "48 pies",
+        "UnitPrice": 49.3,
+        "UnitsInStock": 17,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Vegie-spread",
+        "QuantityPerUnit": "15 - 625 g jars",
+        "UnitPrice": 43.9,
+        "UnitsInStock": 24,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Wimmers gute Semmelknödel",
+        "QuantityPerUnit": "20 bags x 4 pieces",
+        "UnitPrice": 33.25,
+        "UnitsInStock": 22,
+        "UnitsOnOrder": 80,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 5
+    },
+    {
+        "Title": "Louisiana Fiery Hot Pepper Sauce",
+        "QuantityPerUnit": "32 - 8 oz bottles",
+        "UnitPrice": 21.05,
+        "UnitsInStock": 76,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Louisiana Hot Spiced Okra",
+        "QuantityPerUnit": "24 - 8 oz jars",
+        "UnitPrice": 17,
+        "UnitsInStock": 4,
+        "UnitsOnOrder": 100,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Laughing Lumberjack Lager",
+        "QuantityPerUnit": "24 - 12 oz bottles",
+        "UnitPrice": 14,
+        "UnitsInStock": 52,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 10,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Scottish Longbreads",
+        "QuantityPerUnit": "10 boxes x 8 pieces",
+        "UnitPrice": 12.5,
+        "UnitsInStock": 6,
+        "UnitsOnOrder": 10,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Gudbrandsdalsost",
+        "QuantityPerUnit": "10 kg pkg.",
+        "UnitPrice": 36,
+        "UnitsInStock": 26,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Outback Lager",
+        "QuantityPerUnit": "24 - 355 ml bottles",
+        "UnitPrice": 15,
+        "UnitsInStock": 25,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 30,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Flotemysost",
+        "QuantityPerUnit": "10 - 500 g pkgs.",
+        "UnitPrice": 21.5,
+        "UnitsInStock": 26,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Mozzarella di Giovanni",
+        "QuantityPerUnit": "24 - 200 g pkgs.",
+        "UnitPrice": 34.8,
+        "UnitsInStock": 14,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 0,
+        "Discontinued": false,
+        "CategoryId": 4
+    },
+    {
+        "Title": "Röd Kaviar",
+        "QuantityPerUnit": "24 - 150 g jars",
+        "UnitPrice": 15,
+        "UnitsInStock": 101,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 8
+    },
+    {
+        "Title": "Longlife Tofu",
+        "QuantityPerUnit": "5 kg pkg.",
+        "UnitPrice": 10,
+        "UnitsInStock": 50,
+        "UnitsOnOrder": 10,
+        "ReorderLevel": 5,
+        "Discontinued": false,
+        "CategoryId": 7
+    },
+    {
+        "Title": "Rhönbräu Klosterbier",
+        "QuantityPerUnit": "24 - 0.5 l bottles",
+        "UnitPrice": 7.75,
+        "UnitsInStock": 125,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 25,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Lakkalikööri",
+        "QuantityPerUnit": "500 ml",
+        "UnitPrice": 18,
+        "UnitsInStock": 57,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 20,
+        "Discontinued": false,
+        "CategoryId": 1
+    },
+    {
+        "Title": "Original Frankfurter grüne Soße",
+        "QuantityPerUnit": "12 boxes",
+        "UnitPrice": 13,
+        "UnitsInStock": 32,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": 15,
+        "Discontinued": false,
+        "CategoryId": 2
+    },
+    {
+        "Title": "Test 03",
+        "QuantityPerUnit": "Box",
+        "UnitPrice": 100,
+        "UnitsInStock": 10,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": null,
+        "Discontinued": false,
+        "CategoryId": 3
+    },
+    {
+        "Title": "Test 42",
+        "QuantityPerUnit": "Box",
+        "UnitPrice": 100,
+        "UnitsInStock": 10,
+        "UnitsOnOrder": 0,
+        "ReorderLevel": null,
+        "Discontinued": false,
+        "CategoryId": 7
+    }
+]
