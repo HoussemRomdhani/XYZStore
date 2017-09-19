@@ -16,6 +16,9 @@
     <ElementManifest Location="CategoriesInstance\Elements.xml" />
     <ElementManifest Location="Categories\Elements.xml" />
     <ElementFile Location="Categories\Schema.xml" />
+    <ElementManifest Location="ProductsInstance\Elements.xml" />
+    <ElementManifest Location="Products\Elements.xml" />
+    <ElementFile Location="Products\Schema.xml" />
   </ElementManifests>
   <UpgradeActions>
     <VersionRange>
@@ -26,6 +29,8 @@
         <ElementManifest Location="Images\Elements.xml" />
         <ElementManifest Location="CategoriesInstance\Elements.xml" />
         <ElementManifest Location="Categories\Elements.xml" />
+        <ElementManifest Location="ProductsInstance\Elements.xml" />
+        <ElementManifest Location="Products\Elements.xml" />
       </ApplyElementManifests>
     </VersionRange>
   </UpgradeActions>

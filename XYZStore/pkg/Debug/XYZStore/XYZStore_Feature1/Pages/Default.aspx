@@ -35,8 +35,8 @@
         </p>
         <p>
             <a href="../Lists/Categories">Categories</a>
-           <%-- <br />
-            <a href="../Lists/Products">Products</a>--%>
+            <br />
+            <a href="../Lists/Products">Products</a>
         </p>
     </div>
 

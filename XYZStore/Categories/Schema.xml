@@ -9,7 +9,7 @@
       </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
     <Fields>
       
-    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="CategoryId" ID="{6f1f764b-f400-4d72-86c7-c3d9b15ee573}" DisplayName="CategoryId" Type="Number" /><Field Name="Description1" ID="{3973d2c1-b890-4ed0-9e79-3658ec8cfd00}" DisplayName="Description" Type="Text" /></Fields>
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="CategoryId" ID="{6f1f764b-f400-4d72-86c7-c3d9b15ee573}" DisplayName="CategoryID" Type="Number" /><Field Name="Description1" ID="{3973d2c1-b890-4ed0-9e79-3658ec8cfd00}" DisplayName="Description" Type="Text" /></Fields>
     <Views>
       
       
