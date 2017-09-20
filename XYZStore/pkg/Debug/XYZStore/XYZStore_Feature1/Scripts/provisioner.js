@@ -2,21 +2,30 @@
 
 XYZ.Provisioner = function (appUrl, hostUrl) {
     var dfd;
+    var categoryListId;
 
-    function getCategoryListId() {
+    function createCategoriesList() {
         if (!dfd) return;
-        dfd.notify("Getting Category list id");
+        dfd.notify("Creating Categories list");
 
         var context = new SP.ClientContext(appUrl);
-        var web = context.get_web();
+        var web = XYZ.Repositories.getWeb(context, hostUrl);
 
-        var list = web.get_lists().getByTitle("Categories");
+        var lci = new SP.ListCreationInformation();
+        lci.set_title("Categories");
+        lci.set_templateType(SP.ListTemplateType.genericList);
+        var list = web.get_lists().add(lci);
 
-        context.load(list, "Id");
+        list.get_fields().addFieldAsXml('<Field DisplayName="Description" Type="Text" Required="FALSE" Name="Description" />', true, SP.AddFieldOptions.defaultValue);
+
+        context.load(list);
         context.executeQueryAsync(success, fail);
 
         function success() {
-            createProductsList(list.get_id());
+            dfd.notify("Categories list created");
+
+            categoryListId = list.get_id();
+            getCategoriesData();
         }
 
         function fail(sender, args) {
@@ -24,12 +33,58 @@ XYZ.Provisioner = function (appUrl, hostUrl) {
         }
     }
 
-    function createProductsList(categoryListId) {
+    function getCategoriesData() {
+        if (!dfd) return;
+        dfd.notify("Requesting Categories data");
+
+        var url = appUrl + "/Content/CategoriesData.txt";
+        var call = jQuery.get(url);
+        call.done(function (data, textStatus, jqXHR) {
+            populateCategoriesList(data);
+        });
+        call.fail(function (jqXHR, textStatus, errorThrown) {
+            dfd.reject(jqXHR);
+        });
+    }
+
+    function populateCategoriesList(data) {
+        if (!dfd) return;
+        dfd.notify("Populating Categories list");
+
+        var context = new SP.ClientContext(appUrl);
+        var web = XYZ.Repositories.getWeb(context, hostUrl);
+        var list = web.get_lists().getByTitle("Categories");
+
+        var categories = JSON.parse(data);
+        for (var i = 0; i < categories.length; i++) {
+            var value = categories[i];
+            var ici = new SP.ListItemCreationInformation();
+            var item = list.addItem(ici);
+            item.set_item("Title", value.Title);
+            item.set_item("Description", value.Description);
+            item.update();
+        };
+
+        context.executeQueryAsync(success, fail);
+
+        function success() {
+            dfd.notify("Categories list populated");
+            createProductsList();
+        }
+
+        function fail(sender, args) {
+            dfd.reject(args);
+        }
+    }
+
+
+
+    function createProductsList() {
         if (!dfd) return;
         dfd.notify("Creating Products list");
 
         var context = new SP.ClientContext(appUrl);
-        var web = context.get_web();
+        var web = XYZ.Repositories.getWeb(context, hostUrl);
 
         var lci = new SP.ListCreationInformation();
         lci.set_title("Products");
@@ -76,7 +131,7 @@ XYZ.Provisioner = function (appUrl, hostUrl) {
         dfd.notify("Populating Products list");
 
         var context = new SP.ClientContext(appUrl);
-        var web = context.get_web();
+        var web = XYZ.Repositories.getWeb(context, hostUrl);
         var list = web.get_lists().getByTitle("Products");
 
         var products = JSON.parse(data);
@@ -145,7 +200,7 @@ XYZ.Provisioner = function (appUrl, hostUrl) {
     function execute() {
         dfd = new jQuery.Deferred();
 
-        getCategoryListId();
+        createCategoriesList();
 
         return dfd.promise();
     }

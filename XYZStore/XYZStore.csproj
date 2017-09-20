@@ -43,19 +43,11 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Categories\CategoriesInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{ae90ae81-3bba-484e-b539-aaf622f70405}</SharePointProjectItemId>
-    </None>
-    <None Include="Categories\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{c7fc83ab-db25-4e04-aec4-22270c7977e5}</SharePointProjectItemId>
-    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5e4419b7-08c6-4bbb-9d80-084ca5a3539a}</SharePointProjectItemId>
     </None>
-    <Content Include="Categories\CategoriesInstance\Elements.xml" />
-    <Content Include="Categories\Elements.xml" />
-    <Content Include="Categories\Schema.xml" />
+    <Content Include="Content\CategoriesData.txt" />
     <Content Include="Content\ProductsData.txt" />
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />

@@ -1,5 +1,6 @@
 ﻿(function () {
     var appUrl = GetUrlKeyValue("SPAppWebUrl");
+    var hostUrl = GetUrlKeyValue("SPHostUrl");
     var webRepo = new XYZ.Repositories.WebRepository();
 
     jQuery(function () {
@@ -12,19 +13,23 @@
             if (SP.ScriptUtility.isNullOrEmptyString(currentVersion) == false) {
                 populateInterface();
             } else {
-                var call = webRepo.getPermissions(appUrl);
-                call.done(function (data, textStatus, jqXHR) {
-                    var perms = new SP.BasePermissions();
-                    perms.initPropertiesFromJson(data.d.EffectiveBasePermissions);
-                    var manageWeb = perms.has(SP.PermissionKind.manageWeb);
-                    var manageLists = perms.has(SP.PermissionKind.manageLists);
+                var call1 = webRepo.getPermissions(appUrl);
+                var call2 = webRepo.getPermissions(appUrl, hostUrl);
+                var calls = jQuery.when(call1, call2);
+                calls.done(function (appResponse, hostResponse) {
+                    var appPerms = new SP.BasePermissions();
+                    appPerms.initPropertiesFromJson(appResponse[0].d.EffectiveBasePermissions);
+                    var hostPerms = new SP.BasePermissions();
+                    hostPerms.initPropertiesFromJson(hostResponse[0].d.EffectiveBasePermissions);
+                    var manageWeb = appPerms.has(SP.PermissionKind.manageWeb);
+                    var manageLists = hostPerms.has(SP.PermissionKind.manageLists);
 
                     if ((manageWeb && manageLists) === false) {
                         message.text("A site owner needs to visit this site to process an update");
                     } else {
                         message.text("Provisioning content to App Web");
 
-                        var prov = new XYZ.Provisioner(appUrl);
+                        var prov = new XYZ.Provisioner(appUrl, hostUrl);
                         var call = prov.execute();
                         call.progress(function (msg) {
                             message.append("<br/>");
@@ -46,7 +51,7 @@
     });
 
     function populateInterface() {
-        var prodRepo = new XYZ.Repositories.ProductRepository(appUrl);
+        var prodRepo = new XYZ.Repositories.ProductRepository(appUrl, hostUrl);
         var call = prodRepo.getProductsByCategory("Beverages");
         call.done(function (data, textStatus, jqXHR) {
             var message = jQuery("#message");

@@ -1,0 +1,34 @@
+[
+    {
+        "Title": "Beverages",
+        "Description": "Soft drinks, coffees, teas, beers, and ales"
+    },
+    {
+        "Title": "Condiments",
+        "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
+    },
+    {
+        "Title": "Confections",
+        "Description": "Desserts, candies, and sweet breads"
+    },
+    {
+        "Title": "Dairy Products",
+        "Description": "Cheeses"
+    },
+    {
+        "Title": "Grains/Cereals",
+        "Description": "Breads, crackers, pasta, and cereal"
+    },
+    {
+        "Title": "Meat/Poultry",
+        "Description": "Prepared meats"
+    },
+    {
+        "Title": "Produce",
+        "Description": "Dried fruit and bean curd"
+    },
+    {
+        "Title": "Seafood",
+        "Description": "Seaweed and fish"
+    }
+]

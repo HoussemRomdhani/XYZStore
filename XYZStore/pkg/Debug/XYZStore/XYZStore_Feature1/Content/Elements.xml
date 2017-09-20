@@ -3,5 +3,6 @@
   <Module Name="Content">
     <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
     <File Path="Content\ProductsData.txt" Url="Content/ProductsData.txt" ReplaceContent="TRUE" />
+    <File Path="Content\CategoriesData.txt" Url="Content/CategoriesData.txt" ReplaceContent="TRUE" />
   </Module>
 </Elements>

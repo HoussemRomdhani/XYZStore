@@ -14,11 +14,9 @@
     <ElementManifest Location="Content\Elements.xml" />
     <ElementFile Location="Content\App.css" />
     <ElementFile Location="Content\ProductsData.txt" />
+    <ElementFile Location="Content\CategoriesData.txt" />
     <ElementManifest Location="Images\Elements.xml" />
     <ElementFile Location="Images\AppIcon.png" />
-    <ElementManifest Location="CategoriesInstance\Elements.xml" />
-    <ElementManifest Location="Categories\Elements.xml" />
-    <ElementFile Location="Categories\Schema.xml" />
   </ElementManifests>
   <UpgradeActions>
     <VersionRange>
@@ -27,8 +25,6 @@
         <ElementManifest Location="Scripts\Elements.xml" />
         <ElementManifest Location="Content\Elements.xml" />
         <ElementManifest Location="Images\Elements.xml" />
-        <ElementManifest Location="CategoriesInstance\Elements.xml" />
-        <ElementManifest Location="Categories\Elements.xml" />
       </ApplyElementManifests>
     </VersionRange>
   </UpgradeActions>
