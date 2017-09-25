@@ -49,7 +49,9 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5e4419b7-08c6-4bbb-9d80-084ca5a3539a}</SharePointProjectItemId>
     </None>
-    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Pages\Default.aspx" />
     <None Include="WebPartContent\databinding.dwp" />
     <None Include="WebPartContent\SharePointProjectItem.spdata">
