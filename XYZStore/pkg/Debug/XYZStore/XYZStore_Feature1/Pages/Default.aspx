@@ -22,7 +22,7 @@
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-    Provisioning the Web Part Files
+    Page Title
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
@@ -30,6 +30,8 @@
 
     <div>
         <input id="addWebPartFilesButton" type="button" value="Add Web Part Files" />
+        <br />
+        <input id="removeWebPartFilesButton" type="button" value="Remove Web Part Files" />
         <br />
         <p id="message">
         </p>
