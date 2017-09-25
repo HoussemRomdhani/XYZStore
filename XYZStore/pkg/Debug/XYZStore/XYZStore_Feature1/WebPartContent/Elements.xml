@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="WebPartContent">
+    <File Path="WebPartContent\databinding.txt" Url="WebPartContent/databinding.txt" ReplaceContent="TRUE" />
+    <File Path="WebPartContent\databinding.dwp" Url="WebPartContent/databinding.dwp" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

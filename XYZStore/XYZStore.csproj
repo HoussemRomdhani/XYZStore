@@ -43,12 +43,18 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="WebPartContent\Elements.xml" />
+    <Content Include="WebPartContent\databinding.txt" />
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5e4419b7-08c6-4bbb-9d80-084ca5a3539a}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="WebPartContent\databinding.dwp" />
+    <None Include="WebPartContent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f5e188f-0212-441a-9da3-9cba4fca4d4a}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />

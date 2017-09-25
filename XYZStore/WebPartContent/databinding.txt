@@ -1,0 +1,60 @@
+﻿<div style="display:none">
+    <table id="productsTable" border="1" cellspacing="0" cellpadding="5" width="95%">
+        <thead style="background-color: gray; color: white">
+            <th>Name</th>
+            <th>Category</th>
+            <th>Unit Price</th>
+            <th>Units in Stock</th>
+        </thead>
+        <tbody data-bind="foreach: results">
+            <tr>
+                <td data-bind="text: Title"></td>
+                <td data-bind="text: Category.Title"></td>
+                <td data-bind="text: UnitPrice"></td>
+                <td data-bind="text: UnitsInStock"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js"></script>
+<script type="text/javascript">
+
+(function () {
+    "use strict";
+
+    jQuery(document).ready(function () {
+	    var call = jQuery.ajax({
+	        url: _spPageContextInfo.siteAbsoluteUrl +
+	            "/_api/Web/Lists/getByTitle('Products')/Items?" +
+	            "$select=Title,UnitsInStock,UnitPrice,Category/Title&" +
+	            "$filter=(Category/Title eq 'Beverages')&" +
+	            "$expand=Category/Title",
+	        type: "GET",
+	        dataType: "json",
+	        headers: {
+	            Accept: "application/json;odata=verbose"
+	        }
+	    });
+	    call.done(function (data, textStatus, jqXHR) {
+	        var table = jQuery("#productsTable");
+
+	        ko.applyBindings(data.d, table.get(0));
+	        table.closest("div").show();
+	    });
+	    call.fail(function (jqXHR, textStatus, errorThrown) {
+	        var response = "";
+	        try {
+	            var parsed = JSON.parse(jqXHR.responseText);
+	            response = parsed.error.message.value;
+	        } catch (e) {
+	            response = jqXHR.responseText;
+	        }
+	        alert("Call failed. Error: " + response);
+	    });
+    });
+
+})();
+
+</script>
